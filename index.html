@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+	<form id="form" class="form" action="" enctype="multipart/form-data" method="post">
+		<div class="form-title">Форма подачи заявки на участие в конкурсе</div>
+		<div class="form-left">
+			<div class="form-row"><input id="form-fio" class="form-input" name="fio" required="" type="text" placeholder="ФИО"></div>
+			<div class="form-row"><input id="form-age" class="form-input" name="age" required="" type="number" placeholder="Возраст"></div>
+			<div class="form-row"><input id="form-phone" class="form-input" name="phone" required="" type="text" placeholder="Телефон"></div>
+			<div class="form-row"><textarea id="form-addr" class="form-textarea" name="addr" required="" placeholder="Адрес проживания"></textarea></div>
+		</div>
+		<div class="form-right">
+			<div class="form-row"><select class="form-select" name="nomination" required=""><option disabled="disabled" selected="selected" value="">Номинация</option><option class="form-option" value="Мастерская по изготовлению авторской куклы и мягкой игрушки">Мастерская по изготовлению авторской куклы и мягкой игрушки</option><option class="form-option" value="Мастерская по изготовлению авторских украшений">Мастерская по изготовлению авторских украшений</option><option class="form-option" value="Мастерская по изготовлению авторской одежды и аксессуаров">Мастерская по изготовлению авторской одежды и аксессуаров</option><option class="form-option" value="Мастерская по художественной обработке дерева">Мастерская по художественной обработке дерева</option><option class="form-option" value="Художественная мастерская">Художественная мастерская</option><option class="form-option" value="Гончарная мастерская">Гончарная мастерская</option><option class="form-option" value="Мастерская по вязанию спицами и крючком, кружевоплетение">Мастерская по вязанию спицами и крючком, кружевоплетение</option><option class="form-option" value="Мастерская по художественной работе с металлом">Мастерская по художественной работе с металлом</option><option class="form-option" value="Мастерская по изготовлению авторских сувениров и подарков">Мастерская по изготовлению авторских сувениров и подарков</option><option class="form-option" value="Юный мастер">Юный мастер</option></select></div>
+			<div class="form-row mb-15"><textarea id="form-work" class="form-textarea" name="work" required="" placeholder="Название работы или работ с кратким описанием техники исполнения"></textarea></div>
+			<div class="form-row">
+				<div class="form-text">Файлы с материалами работ (презентация работ участника)</div>
+				<p><input id="form-file" class="form-file" multiple="" name="file[]" required="" type="file" accept=".zip, .jpg, .jpeg, .png"><br>
+					<label class="form-labelFile" for="form-file"><span>Загрузить…</span></label></p>
+				<div class="form-alarm">* В ZIP-архиве(не более 20 Мб) не более пяти фотографий авторской работы (формат JPEG, 300 dpi 2000х3000, размер одного файла — не менее 2 Мб)</div>
+			</div>
+		</div>
+		<div class="form-row"><label class="form-label" for="form-file"></label><br>
+			<input id="form-checkbox" class="form-checkbox" name="checkbox" required="" type="checkbox"><br>
+			<span class="form-span">Согласен на обработку персональных данных</span><p></p>
+			<div class="form-privacy">
+				<p>*Я даю согласие организации АНО «АСИ «Новый век», являющейся организатором конкурса «Умельцы Тамбовщины», в соответствии со статьей 9 Федерального закона от 27 июля 2006 г. № 152-ФЗ «О персональных данных» на обработку моих персональных данных, а именно на совершение действий, предусмотренных пунктом 3 статьи 3 Федерального закона от 27 июля 2006 г. № 152-ФЗ «О персональных данных». Я понимаю, что обработка персональных данных является неотъемлемой процедурой при проведении всех мероприятий, связанных с участием в конкурсе, в том числе опубликование моих личных данных и работ предоставленных на конкурс в СМИ в случае победы в онлайн конкурсе для мастеров-ремесленников Тамбовской области «Умельцы Тамбовщины», проводимом АНО «АСИ «Новый век». Настоящее согласие даю на период до истечения сроков хранения соответствующей информации или документов, содержащих указанную информацию, определяемых в соответствии с законом РФ.</p>
+				<p>Все поля должны быть заполнены в строгом соответствии с формой подачи заявки на участие в конкурсе и Положением о проведении конкурса.</p>
+			</div>
+		</div>
+		<div class="form-row">
+			<input id="form-submit" class="form-input" name="send" type="submit" value="Отправить"><p></p>
+			<div class="process">Идёт отправка сообщения…</div>
+		</div>
+	</form>
+</body>
+</html>
